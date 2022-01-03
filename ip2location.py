@@ -5,6 +5,11 @@ from requests import get
 from sys import exit , argv
 from time import sleep
 import json
+import webbrowser
+if name == 'nt':
+	webbrowser.open('https://t.me/LizardSEC')
+else:
+	run('xdg-open https://t.me/LizardSEC',shell=True)
 if name == 'nt':
 	run('cls',shell=True)
 else:
@@ -65,3 +70,4 @@ print('Region : '+str(region))
 print('City : '+str(city))
 print('Latitude : '+str(lat))
 print('Longitude : '+str(lon))
+print('Google Maps Link : '+str(lat)+'+'+str(lon))
